@@ -1,0 +1,7 @@
+a: File
+l: File
+s: /tmp/da
+b:
+  c: 37
+  d: [6, 9]
+

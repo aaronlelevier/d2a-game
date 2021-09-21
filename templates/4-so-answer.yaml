@@ -1,0 +1,7 @@
+apiVersion: v2
+kind: Service
+action: Read
+metadata:
+  name: myName
+  namespace: default
+name: templates/5-candidate.yaml

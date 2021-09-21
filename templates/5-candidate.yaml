@@ -1,0 +1,7 @@
+apiVersion: v3
+kind: File
+action: Read
+metadata:
+  name: myName
+  namespace: default
+name: TBD
