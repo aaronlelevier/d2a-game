@@ -1,3 +1,7 @@
+// File I/O and AWS S3 I/O example script
+// usage:
+// $ go run game/game.go -s templates/4-so-answer.yaml
+
 package main
 
 import (
@@ -37,9 +41,10 @@ func main() {
 	putObject(contents)
 
 	// Read YAML field from input file
-	service := unmarshlManifest(contents)
+	manifest := unmarshlManifest(contents)
 	// access a param in that object
-	configFile := service.Name
+	configFile := manifest.Name
+
 	printBanner("Read YAML field from input file: " + configFile)
 	// reads 2nd file to stdout
 	readFile(configFile)
